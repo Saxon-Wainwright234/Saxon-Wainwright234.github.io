@@ -351,6 +351,22 @@ chsh -s /usr/bin/zsh                 # Make zsh default shell
 | `alias update='sudo pacman -Syu'`  | Update the whole system                            |
 | `alias please='sudo $(fc -ln -1)'` | rerun the last command with sudo                   |
 
+### 5.7 Install a web browser
+
+I installed Firefox because it's in the official Arch repos, so pacman installs and updates it like everything else
+
+```bash
+sudo pacman -Syu                        # Update the system first
+sudo pacman -S firefox                  # Install Firefox
+sudo pacman -S noto-fonts ttf-dejavu    # Fonts so web pages display correctly
+firefox &                               # Open it from the terminal
+```
+
+It also shows up in the Xfce menu under **Applications → Internet → Firefox**
+
+> [!tip]
+> Create a snapshot EX: After browser install
+
 ---
 
 ## Step 6: Problems that had to resolved
